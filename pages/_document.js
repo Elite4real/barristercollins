@@ -1,4 +1,4 @@
-import { Html, Head, Body, Main, NextScript } from 'next/document';
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
@@ -30,7 +30,7 @@ export default function Document() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://www.barristercollins.com/og-image.jpg" />
 
-        {/* ── SMARTSUPP LIVE CHAT ── */}
+        {/* Smartsupp Live Chat */}
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
@@ -109,15 +109,13 @@ export default function Document() {
           }}
         />
       </Head>
-      <Body>
+      <body>
         <Main />
         <NextScript />
-
-        {/* Smartsupp noscript fallback */}
         <noscript>
           Powered by <a href="https://www.smartsupp.com" target="_blank" rel="noreferrer">Smartsupp</a>
         </noscript>
-      </Body>
+      </body>
     </Html>
   );
 }

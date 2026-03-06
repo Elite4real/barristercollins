@@ -57,6 +57,8 @@ export default function App({ Component, pageProps }) {
         <meta name="geo.placename" content="Houston" />
         <meta name="geo.position" content="29.7604;-95.3698" />
         <meta name="ICBM" content="29.7604, -95.3698" />
+
+        
       </Head>
 
       <Navbar />

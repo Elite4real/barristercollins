@@ -5,7 +5,7 @@ import styles from '../styles/Contact.module.css';
 const contactInfo = [
   { icon: '📍', label: 'Office Location', value: 'District of Houston, Texas, USA' },
   { icon: '📞', label: 'Phone', value: '+1 (713) 000-0000' },
-  { icon: '✉️', label: 'Email', value: 'james@collinslaw-houston.com' },
+  { icon: '✉️', label: 'Email', value: ' Bar.collins231@gmail.com' },
   { icon: '🕐', label: 'Office Hours', value: 'Mon–Fri: 8am–6pm | Emergencies: 24/7' },
 ];
 

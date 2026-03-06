@@ -38,9 +38,9 @@ export default function Footer() {
           <h4>Contact</h4>
           <ul>
             <li><a href="#">District of Houston, TX</a></li>
-            <li><a href="tel:+17130000000">+1 (713) 000-0000</a></li>
-            <li><a href="mailto:james@collinslaw.com">james@collinslaw.com</a></li>
-            <li><a href="https://wa.me/17130000000" target="_blank" rel="noreferrer">WhatsApp Us</a></li>
+            <li><a href="tel:+1 737 395 1212">+1 737 395 1212</a></li>
+            <li><a href="mailto: Bar.collins231@gmail.com">Bar.collins231@gmail.com</a></li>
+            <li><a href="https://wa.me/17373951212" target="_blank" rel="noreferrer">WhatsApp Us</a></li>
           </ul>
         </div>
       </div>

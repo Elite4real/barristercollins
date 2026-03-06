@@ -21,7 +21,7 @@ function HeroImage() {
   return (
     <div className={styles.heroJustice}>
       <img
-        src="/1772782087600-3763d85a-3c52-456a-ad5e-69c2013bcd48.png"
+        src="/attorney.png"
         alt="Bar. James Scott Collins — Houston Assistant Attorney"
         className={styles.justiceImg}
       />
@@ -34,8 +34,18 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Collins Law Firm | District of Houston</title>
-        <meta name="description" content="Bar. James Scott Collins — Houston Assistant Attorney. Expert legal representation across criminal defense, civil litigation, corporate law, and more." />
+        <title>Collins Law Firm | Houston Criminal Defense &amp; Civil Attorney</title>
+        <meta name="description" content="Bar. James Scott Collins — Houston Assistant Attorney with 20+ years of legal experience. Expert representation in criminal defense, civil litigation, corporate law, real estate & family law. Free consultation." />
+        <meta name="keywords" content="Houston attorney, Houston lawyer, criminal defense Houston, civil litigation Houston, corporate lawyer Houston, real estate attorney Houston, family law Houston, Bar James Scott Collins, Collins Law Firm, barrister collins" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.barristercollins.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.barristercollins.com" />
+        <meta property="og:title" content="Collins Law Firm | Houston Criminal Defense & Civil Attorney" />
+        <meta property="og:description" content="Bar. James Scott Collins — Houston Assistant Attorney. Expert legal representation in criminal defense, civil litigation, corporate law, and more. Free consultation." />
+        <meta property="og:image" content="https://www.barristercollins.com/og-image.jpg" />
+        <meta name="twitter:title" content="Collins Law Firm | Houston Criminal Defense & Civil Attorney" />
+        <meta name="twitter:description" content="Bar. James Scott Collins — Houston Assistant Attorney. Expert legal representation. Free consultation." />
       </Head>
 
       {/* HERO */}

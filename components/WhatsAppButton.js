@@ -1,7 +1,7 @@
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/17130000000?text=Hello%20Bar.%20Collins%2C%20I%20need%20legal%20assistance."
+      href="https://wa.me/17373951212?text=Hello%20Bar.%20Collins%2C%20I%20need%20legal%20assistance."
       target="_blank"
       rel="noreferrer"
       className="wa-float"

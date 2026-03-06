@@ -230,7 +230,7 @@ a { text-decoration: none; color: inherit; }
 
 /* ── WHATSAPP FLOAT ── */
 .wa-float {
-  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+  position: fixed; bottom: 2rem; left: 2rem; z-index: 999;
   width: 58px; height: 58px;
   background: #25D366; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;

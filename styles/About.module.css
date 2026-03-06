@@ -1,0 +1,216 @@
+/* ── PROFILE ── */
+.profile {
+  padding: 7rem 5%;
+  background: var(--cream);
+}
+.profileInner {
+  display: grid; grid-template-columns: 360px 1fr;
+  gap: 6rem; align-items: start;
+  max-width: 1200px; margin: 0 auto;
+}
+.profileCard {
+  background: var(--navy);
+  padding: 3rem 2.5rem;
+  border-radius: 2px;
+  text-align: center;
+  position: sticky; top: 100px;
+  box-shadow: 0 20px 60px rgba(13,27,42,0.2);
+}
+.profileAvatar {
+  width: 110px; height: 110px; border-radius: 50%;
+  background: rgba(201,168,76,0.1);
+  border: 2px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem; margin: 0 auto 1.5rem;
+}
+.profileCard h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem; font-weight: 700;
+  color: var(--white); margin-bottom: 0.3rem;
+}
+.profileTitle {
+  font-size: 0.68rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold); font-weight: 600;
+}
+.profileDivider {
+  width: 40px; height: 1px; background: rgba(201,168,76,0.4);
+  margin: 1.5rem auto;
+}
+.profileDetails {
+  display: flex; flex-direction: column; gap: 0.9rem;
+  text-align: left;
+}
+.profileDetail {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.profileDetail span {
+  font-size: 0.65rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(255,255,255,0.35);
+}
+.profileDetail strong {
+  font-size: 0.78rem; color: var(--white); font-weight: 600;
+}
+
+.profileContent h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 700; line-height: 1.2;
+  color: var(--navy); margin-bottom: 1.2rem;
+}
+.profileContent h2 em { font-style: italic; color: var(--gold); }
+.profileContent p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; color: #555; line-height: 1.85;
+  margin-bottom: 1.2rem;
+}
+
+.profileStats {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1rem; margin-top: 2.5rem;
+  padding: 2rem; background: var(--navy); border-radius: 2px;
+}
+.profileStat { text-align: center; }
+.profileStatNum {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 700; color: var(--gold); line-height: 1;
+}
+.profileStatLabel {
+  font-size: 0.6rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(255,255,255,0.4);
+  margin-top: 0.3rem;
+}
+
+/* ── VALUES ── */
+.values {
+  padding: 7rem 5%;
+  background: var(--navy);
+}
+.valuesHeader {
+  text-align: center; margin-bottom: 4rem;
+}
+.valuesHeader h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700; color: var(--white); line-height: 1.2;
+}
+.valuesHeader h2 em { font-style: italic; color: var(--gold); }
+.valuesGrid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; max-width: 1200px; margin: 0 auto;
+}
+.valueCard {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,168,76,0.08);
+  padding: 2.5rem 2rem; text-align: center;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.valueCard:hover {
+  border-color: rgba(201,168,76,0.3); transform: translateY(-4px);
+}
+.valueIcon { font-size: 2.5rem; margin-bottom: 1rem; }
+.valueCard h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--white); margin-bottom: 0.8rem;
+}
+.valueCard p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; color: rgba(255,255,255,0.5); line-height: 1.75;
+}
+
+/* ── TIMELINE ── */
+.timeline {
+  padding: 7rem 5%;
+  background: var(--cream);
+}
+.timelineInner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 6rem; align-items: start;
+  max-width: 1100px; margin: 0 auto;
+}
+.timelineLeft h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 700; line-height: 1.2;
+  color: var(--navy); margin-bottom: 1.2rem;
+}
+.timelineLeft h2 em { font-style: italic; color: var(--gold); }
+.timelineLeft p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; color: #555; line-height: 1.85;
+}
+
+.timelineItem {
+  display: grid; grid-template-columns: 70px 30px 1fr;
+  gap: 1rem; align-items: start; margin-bottom: 0;
+}
+.timelineYear {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem; font-weight: 700;
+  color: var(--gold); padding-top: 0.1rem;
+  text-align: right;
+}
+.timelineLine {
+  display: flex; flex-direction: column; align-items: center;
+}
+.timelineDot {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--gold); flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+.timelineConnector {
+  width: 2px; background: rgba(201,168,76,0.2);
+  flex: 1; min-height: 50px; margin-top: 4px;
+}
+.timelineEvent {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem; color: #444; line-height: 1.7;
+  padding-bottom: 1.5rem;
+}
+
+/* ── CTA ── */
+.cta {
+  padding: 7rem 5%;
+  background: var(--navy);
+  position: relative; overflow: hidden;
+}
+.cta::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg, transparent, transparent 40px,
+    rgba(201,168,76,0.025) 40px, rgba(201,168,76,0.025) 41px
+  );
+}
+.ctaInner {
+  position: relative; z-index: 1;
+  text-align: center; max-width: 600px; margin: 0 auto;
+}
+.ctaInner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700; color: var(--white);
+  line-height: 1.2; margin-bottom: 1rem;
+}
+.ctaInner h2 em { font-style: italic; color: var(--gold); }
+.ctaInner p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem; color: rgba(255,255,255,0.55);
+  margin-bottom: 2.5rem;
+}
+.ctaActions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .profileInner { grid-template-columns: 1fr; }
+  .profileCard { position: static; }
+  .profileStats { grid-template-columns: 1fr 1fr; }
+  .valuesGrid { grid-template-columns: 1fr 1fr; }
+  .timelineInner { grid-template-columns: 1fr; gap: 3rem; }
+}
+@media (max-width: 600px) {
+  .valuesGrid { grid-template-columns: 1fr; }
+  .profileStats { grid-template-columns: 1fr 1fr; }
+}

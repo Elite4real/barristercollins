@@ -1,0 +1,51 @@
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Dependency directories
+vendor/
+
+# Build folders
+dist/
+build/
+
+# Cache
+.cache/
+.tmp/
+
+# OS generated files
+desktop.ini
+
+# Private keys
+*.pem
+*.key
+
+# Backup files
+*.zip
+*.tar
+*.gz
+
+# cPanel files
+error_log
+cgi-bin/
+
+# Uploads (optional)
+uploads/

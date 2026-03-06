@@ -1,0 +1,115 @@
+/* ── SERVICES LIST ── */
+.servicesList { background: var(--cream); }
+
+.serviceRow {
+  padding: 6rem 5%;
+  border-bottom: 1px solid var(--light-gray);
+}
+.serviceRowAlt {
+  background: var(--white);
+}
+.serviceRowInner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 6rem; align-items: center;
+  max-width: 1200px; margin: 0 auto;
+}
+.serviceRowAlt .serviceRowInner {
+  direction: rtl;
+}
+.serviceRowAlt .serviceRowInner > * {
+  direction: ltr;
+}
+
+.serviceIconWrap {
+  font-size: 3rem; margin-bottom: 1rem;
+}
+.serviceInfo h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700; color: var(--navy);
+  line-height: 1.2; margin: 0.3rem 0 1rem;
+}
+.serviceInfo p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; color: #555; line-height: 1.85;
+}
+
+.serviceFeatures {
+  background: var(--navy);
+  padding: 3rem 2.5rem; border-radius: 2px;
+}
+.serviceFeatures h4 {
+  font-size: 0.65rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold);
+  font-weight: 600; margin-bottom: 1.5rem;
+}
+.serviceFeatures ul {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+.serviceFeatures li {
+  display: flex; align-items: center; gap: 0.75rem;
+  font-size: 0.88rem; color: rgba(255,255,255,0.7);
+  font-weight: 500;
+}
+.checkmark {
+  color: var(--gold); font-size: 0.9rem; flex-shrink: 0;
+  font-weight: 700;
+}
+
+.serviceContact {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+.serviceContact p {
+  font-size: 0.72rem; color: rgba(255,255,255,0.35);
+  margin-bottom: 0.75rem;
+}
+.waLink {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: #25D366; color: white;
+  padding: 0.6rem 1.2rem; border-radius: 2px;
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  transition: background 0.3s;
+}
+.waLink:hover { background: #1da952; }
+
+/* ── CTA ── */
+.cta {
+  padding: 7rem 5%;
+  background: var(--navy);
+  position: relative; overflow: hidden;
+}
+.cta::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg, transparent, transparent 40px,
+    rgba(201,168,76,0.025) 40px, rgba(201,168,76,0.025) 41px
+  );
+}
+.ctaInner {
+  position: relative; z-index: 1;
+  text-align: center; max-width: 620px; margin: 0 auto;
+}
+.ctaInner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700; color: var(--white);
+  line-height: 1.2; margin-bottom: 1rem;
+}
+.ctaInner h2 em { font-style: italic; color: var(--gold); }
+.ctaInner p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem; color: rgba(255,255,255,0.55);
+  margin-bottom: 2.5rem; line-height: 1.75;
+}
+.ctaActions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .serviceRowInner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .serviceRowAlt .serviceRowInner { direction: ltr; }
+}

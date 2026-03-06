@@ -1,0 +1,187 @@
+/* ── CONTACT SECTION ── */
+.contactSection {
+  padding: 7rem 5%;
+  background: var(--cream);
+}
+.contactInner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 6rem; align-items: start;
+  max-width: 1200px; margin: 0 auto;
+}
+.contactLeft h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 700; line-height: 1.2;
+  color: var(--navy); margin-bottom: 1.2rem;
+}
+.contactLeft h2 em { font-style: italic; color: var(--gold); }
+.contactLeft > p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; color: #555; line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.infoList { display: flex; flex-direction: column; gap: 1.2rem; margin-bottom: 2.5rem; }
+.infoItem {
+  display: flex; align-items: flex-start; gap: 1rem;
+}
+.infoIcon {
+  width: 46px; height: 46px;
+  background: var(--navy); border-radius: 2px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; flex-shrink: 0;
+}
+.infoItem > div { display: flex; flex-direction: column; gap: 0.15rem; }
+.infoLabel {
+  font-size: 0.6rem; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--gold); font-weight: 600;
+}
+.infoValue { font-size: 0.88rem; color: var(--navy); font-weight: 500; }
+
+.waBlock {
+  background: var(--navy);
+  padding: 2rem; border-radius: 2px;
+  border-left: 3px solid #25D366;
+}
+.waBlockHeader {
+  display: flex; align-items: center; gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+.waBlockHeader strong {
+  font-size: 0.9rem; color: var(--white); font-weight: 700;
+}
+.waBlock p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; color: rgba(255,255,255,0.5);
+  line-height: 1.65; margin-bottom: 1.2rem;
+}
+.waBtn {
+  display: inline-block;
+  background: #25D366; color: var(--white);
+  padding: 0.7rem 1.5rem; border-radius: 2px;
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  transition: background 0.3s;
+}
+.waBtn:hover { background: #1da952; }
+
+/* ── FORM ── */
+.formWrap {
+  background: var(--white);
+  padding: 3rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 2px;
+  box-shadow: 0 16px 48px rgba(13,27,42,0.07);
+}
+.form h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem; font-weight: 700;
+  color: var(--navy); margin-bottom: 0.4rem;
+}
+.form > p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; color: #666; margin-bottom: 2rem; line-height: 1.6;
+}
+.formRow {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+}
+.formGroup {
+  display: flex; flex-direction: column; gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.formGroup label {
+  font-size: 0.62rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--navy); font-weight: 600;
+}
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  background: var(--cream);
+  border: 1px solid var(--light-gray);
+  border-radius: 2px;
+  padding: 0.85rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem; color: var(--navy);
+  outline: none;
+  transition: border-color 0.3s, background 0.3s;
+  width: 100%;
+}
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: var(--gold);
+  background: var(--white);
+}
+.formGroup textarea { resize: vertical; }
+
+.disclaimer {
+  font-size: 0.65rem; color: var(--gray);
+  line-height: 1.6; margin-top: 1rem;
+  text-align: center;
+}
+
+/* ── SUCCESS ── */
+.successMsg {
+  text-align: center; padding: 3rem 2rem;
+}
+.successIcon {
+  width: 70px; height: 70px; border-radius: 50%;
+  background: rgba(37,166,82,0.1);
+  border: 2px solid #25a652;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; color: #25a652;
+  margin: 0 auto 1.5rem;
+}
+.successMsg h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 700;
+  color: var(--navy); margin-bottom: 1rem;
+}
+.successMsg p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; color: #555; line-height: 1.8;
+}
+
+/* ── FAQ ── */
+.faq {
+  padding: 7rem 5%;
+  background: var(--navy);
+}
+.faqInner { max-width: 1000px; margin: 0 auto; }
+.faqTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700; color: var(--white); line-height: 1.2;
+}
+.faqTitle em { font-style: italic; color: var(--gold); }
+.faqGrid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.faqItem {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,168,76,0.08);
+  padding: 2rem; border-radius: 2px;
+  transition: border-color 0.3s;
+}
+.faqItem:hover { border-color: rgba(201,168,76,0.25); }
+.faqItem h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; font-weight: 600;
+  color: var(--white); margin-bottom: 0.75rem;
+}
+.faqItem p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; color: rgba(255,255,255,0.5);
+  line-height: 1.75;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .contactInner { grid-template-columns: 1fr; gap: 3rem; }
+  .faqGrid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .formRow { grid-template-columns: 1fr; }
+  .formWrap { padding: 2rem 1.5rem; }
+}
